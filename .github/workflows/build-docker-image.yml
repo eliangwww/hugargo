@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t your-dockerhub-username/your-repo-name:latest .
+      run: docker build -t eliangwww/hugargo:latest .
 
     - name: Push Docker image
-      run: docker push your-dockerhub-username/your-repo-name:latest
+      run: docker push eliangwww/hugargo:latest
