@@ -3,12 +3,12 @@ const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 7860;        
 const UUID = process.env.UUID || '986e0d08-b275-4dd3-9e75-f3094b36fa2a'; //若需要改UUID，需要在config.json里一致
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.abc.cn';     
-const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
+const NEZHA_PORT = process.env.NEZHA_PORT || '';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'hug.cfip.me';                       // 仅能使用token，argo端口8080，cf后台设置需对应
 const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiN2ViYjU3OGNmYTM3MjI5YmE5NzM1NjUyZmI1NjU5NDEiLCJ0IjoiMmE3OWI3MjAtMTRlNi00ZGU5LTg2Y2MtYmI3YzcwODVmZTA2IiwicyI6Ik9UUmxaVEl6TmpFdE16aGxZaTAwT0RjeExUZ3hOek10T0RRNFlUYzFNREU0TUdRdyJ9';
-const CFIP = process.env.CFIP || 'government.se';
+const CFIP = process.env.CFIP || 'www.visa.com.tw';
 const NAME = process.env.NAME || 'hug';
 
 // root route
